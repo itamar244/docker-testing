@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:8080"
+      - "9229:9229"
+    command:
+      - node
+      - "--inspect=0.0.0.0"
+      - "index.js" 
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules

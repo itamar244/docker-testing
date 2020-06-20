@@ -1,0 +1,17 @@
+{
+  "name": "simple-debugging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect=0.0.0.0 index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pg": "^7.14.3",
+    "fastify": "^2.15.0",
+    "pg": "^8.2.1"
+  }
+}
